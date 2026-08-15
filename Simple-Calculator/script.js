@@ -125,7 +125,7 @@ btnbtn.onclick=function(){
     }
 }
 btnequal.onclick=function(){
-    if(result.textContent==="77"){
+    if(result.textContent==="771737"){
         result.textContent="I love u ...❤️";
         return;
     }
