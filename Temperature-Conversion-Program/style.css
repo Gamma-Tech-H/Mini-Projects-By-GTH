@@ -3,98 +3,115 @@
     padding:0;
     box-sizing:border-box;
 }
+
 body{
     min-height:100vh;
     display:flex;
     justify-content:center;
     align-items:center;
     padding:20px;
-    background:#E2E8F0;
-    font-family:Arial, Helvetica, sans-serif;
+    background:linear-gradient(135deg,#60A5FA,#F97316);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
+
 #container{
     width:100%;
     max-width:420px;
     background:white;
     padding:30px;
-    border-radius:15px;
-    box-shadow:0 8px 20px rgba(0,0,0,.2);
+    border-radius:18px;
+    box-shadow:0 10px 25px rgba(0,0,0,.25);
 }
+
 h1{
     text-align:center;
     color:#2563EB;
     margin-bottom:25px;
     font-size:2rem;
 }
+
 label{
     display:block;
-    margin-bottom:8px;
-    color:#334155;
+    margin:10px 0 8px;
+    color:#374151;
     font-weight:bold;
 }
+
 #Temperature{
     width:100%;
     padding:12px;
-    margin-bottom:20px;
     border:2px solid #CBD5E1;
-    border-radius:8px;
-    font-size:18px;
+    border-radius:10px;
+    font-size:17px;
     outline:none;
+    margin-bottom:20px;
 }
+
 #Temperature:focus{
-    border-color:#2563EB;
+    border-color:#F97316;
 }
+
 #container div{
     display:flex;
     align-items:center;
     gap:10px;
-    margin-bottom:15px;
+    margin:12px 0;
 }
+
 input[type="radio"]{
     transform:scale(1.2);
+    accent-color:#2563EB;
     cursor:pointer;
 }
+
 button{
     width:100%;
-    padding:12px;
-    margin-top:15px;
-    background:#2563EB;
+    padding:13px;
+    margin-top:20px;
+    background:#F97316;
     color:white;
     border:none;
-    border-radius:8px;
+    border-radius:10px;
     font-size:18px;
     font-weight:bold;
     cursor:pointer;
     transition:.2s;
 }
+
 button:hover{
-    background:#1D4ED8;
+    background:#EA580C;
 }
+
 button:active{
     transform:scale(.98);
 }
+
 #FinalResult{
     margin-top:20px;
     padding:15px;
-    text-align:center;
-    background:#F1F5F9;
-    color:#1E293B;
-    border:2px solid #CBD5E1;
+    background:#EFF6FF;
+    border:2px solid #93C5FD;
     border-radius:10px;
+    text-align:center;
+    color:#1E3A8A;
     font-size:1.4rem;
     min-height:60px;
     display:flex;
     justify-content:center;
     align-items:center;
 }
+
 @media (max-width:480px){
+
+    #container{
+        padding:20px;
+    }
 
     h1{
         font-size:1.6rem;
     }
 
-    button,
-    #Temperature{
+    button{
         font-size:16px;
     }
 
