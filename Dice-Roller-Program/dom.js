@@ -10,7 +10,7 @@ button.onclick=function(){
         imagecontainer.innerHTML = "";
     for(let i=0;i<numberofdices.value;i++){
         let y=Math.floor(Math.random()*6)+1;
-        imagecontainer.innerHTML+=`<img src="/Dice_Roller_Program/images/${y}.png">`
+        imagecontainer.innerHTML+=`<img src="images/${y}.png">`
     }
 
 
